@@ -1,0 +1,99 @@
+/* CSS Variables */
+
+:root {
+    --priamry: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    max-width: 1140px;
+    background: #ccc;
+    margin: 30px auto;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 140%;
+}
+
+h2 {
+    font-size: 120%;
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 100%;
+}
+
+.icons {
+    font-size: 150%;
+    padding: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;   /*Vertically aligned to center*/
+    background-color: antiquewhite;
+}
+
+.header div {
+    margin: 0 10px;
+}
+
+.header li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.header ul {
+    float: right;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+    color: blue;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 3px solid blue;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    color: #555;
+    border-bottom: 3px solid transparent;
+}
+
+.top-container {
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(img/MountainScene.jpg);
+    background-size: cover;
+    max-width: 100%;
+    
+}

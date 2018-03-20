@@ -1,0 +1,149 @@
+/************************************/
+/*          BASIC SETUP             */
+/************************************/
+
+    {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,
+body {
+    box-sizing: border-box; /*Width and height apply to all parts of the element: content, padding and borders*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*Perfect rendering of font.*/
+    color: #555; /*font color*/
+    overflow-x: hidden; /*specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element*/
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /*top and bottom are 0, left and right are auto(centered)*/
+    border: 2px solid black;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+}
+
+/*************************************/
+/*          Top Header               */
+/*************************************/
+
+.top-header {
+    display: grid;
+    grid-template-areas: 'join-us social-links';
+    background: #4cac4c;
+}
+
+.join-us,
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+    display: inline;
+}
+.icons {
+    font-size: 150%;
+    color: #555;
+    margin-top: 0;
+}
+
+/***********************************/
+/*             HEADINGS            */
+/***********************************/
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {    /* St Peters in Main Nav */
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 100%;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 80%;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 90%;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+}
+
+/**********************************************/
+/*             Main Navigation                */
+/**********************************************/
+
+.main-nav {
+    list-style: none; /*gets rid of bullet points*/
+    text-align: center;
+    background: white;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+nav li {
+    margin: 20px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none; /*no underline*/
+    border-bottom: 4px solid transparent; /*removes border on bottom*/
+    transition: border-bottom 0.2s; /*0.2sec transition*/
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 10px solid red;
+}
+
+/***********************************************/
+/*          St Peters Image in Circle          */
+/***********************************************/
+.StPeters {
+    border: 2px solid white;
+    transform: translate(100px, 0px) scale(1.0);  
+    border-radius: 300px;
+}
+
+.mountains {
+    background-image: url(img/MountainScene.jpg);
+    max-width: 1140px;
+    margin: auto;
+}
+.main-pic-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(img/MountainScene.JPG);
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
